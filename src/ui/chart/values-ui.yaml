@@ -8,7 +8,7 @@
 image:
   repository: 454143665149.dkr.ecr.ap-south-1.amazonaws.com/retail-store-prady/ui
   pullPolicy: IfNotPresent
-  tag: sha-2f70b2a
+  tag: sha-8d375c5
 
 # ----------------------------------------------------------------------------
 # APPLICATION CONFIGURATION
