@@ -26,7 +26,7 @@ jobs:
       - name: Configure AWS credentials via OIDC
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::454143665149:role/github-actions-oidc-role-ui-prady # Replace <IAM role ARN>
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }} # Replace <IAM role ARN>
           aws-region: ${{ env.AWS_REGION }}
           audience: sts.amazonaws.com
 
