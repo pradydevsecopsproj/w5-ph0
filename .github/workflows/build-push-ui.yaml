@@ -28,6 +28,7 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::454143665149:role/github-actions-oidc-role-ui-prady # Replace <IAM role ARN>
           aws-region: ${{ env.AWS_REGION }}
+          audience: sts.amazonaws.com
 
       - name: Login to Amazon ECR
         id: login-ecr
